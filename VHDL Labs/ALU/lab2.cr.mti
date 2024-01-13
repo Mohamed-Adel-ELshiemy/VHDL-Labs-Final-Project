@@ -1,0 +1,79 @@
+{D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd} {0 {vcom -work work -2002 -explicit {D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package NUMERIC_BIT
+-- Loading package pack_a
+-- Compiling entity testbench
+-- Compiling architecture test_file of testbench
+-- Loading entity alu
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(24): near "IN": expecting STRING or IDENTIFIER or << or '('
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(25): near "IN": expecting STRING or IDENTIFIER or << or '('
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(26): near "IN": expecting STRING or IDENTIFIER or << or '('
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(27): near "OUT": expecting STRING or IDENTIFIER or << or '('
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(29): (vcom-1141) Identifier "dec" does not identify a component declaration.
+
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(41): near ")": expecting ';'
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(45): Illegal target for signal assignment.
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(45): (vcom-1136) Unknown identifier "a_in".
+
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(46): Illegal target for signal assignment.
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(46): (vcom-1136) Unknown identifier "b_in".
+
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(47): Illegal target for signal assignment.
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(47): (vcom-1136) Unknown identifier "op_in".
+
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(52): No feasible entries for subprogram "READ".
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(53): No feasible entries for subprogram "READ".
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(54): No feasible entries for subprogram "READ".
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(56): (vcom-1136) Unknown identifier "c_out_file".
+
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(59): Illegal target for signal assignment.
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(59): (vcom-1136) Unknown identifier "op_in".
+
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(60): Illegal target for signal assignment.
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(60): (vcom-1136) Unknown identifier "a_in".
+
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(61): Illegal target for signal assignment.
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(61): (vcom-1136) Unknown identifier "b_in".
+
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(68): No feasible entries for subprogram "WRITE".
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(71): No feasible entries for subprogram "WRITE".
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(74): No feasible entries for subprogram "WRITE".
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(77): (vcom-1136) Unknown identifier "c_out_file".
+
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(80): (vcom-1136) Unknown identifier "c_out".
+
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(82): (vcom-1136) Unknown identifier "c_out".
+
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(82): (vcom-1136) Unknown identifier "c_out_file".
+
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(82): Type error resolving infix expression "/=" as type std.STANDARD.BOOLEAN.
+** Error: D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd(93): VHDL Compiler exiting
+
+} {12.0 17.0 18.0 21.0 22.0 24.0 25.0 27.0 28.0 32.0 33.0 35.0 36.0 38.0 39.0 41.0 42.0 46.0 47.0 48.0 49.0 50.0 51.0 52.0 53.0 55.0} {}} {D:/ITI internship/VHDL/VHDL Labs/ALU/alu.vhd} {1 {vcom -work work -2002 -explicit {D:/ITI internship/VHDL/VHDL Labs/ALU/alu.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Compiling package pack_a
+-- Loading package TEXTIO
+-- Loading package NUMERIC_BIT
+-- Loading package pack_a
+-- Compiling entity alu
+-- Compiling architecture alu of alu
+
+} {} {}} {D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb.vhd} {1 {vcom -work work -2002 -explicit {D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_BIT
+-- Loading package std_logic_textio
+-- Loading package pack_a
+-- Compiling entity alu_tb
+-- Compiling architecture sign_tb of alu_tb
+
+} {} {}}

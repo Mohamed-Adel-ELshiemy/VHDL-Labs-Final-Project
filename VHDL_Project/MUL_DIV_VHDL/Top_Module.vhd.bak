@@ -1,0 +1,113 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+use IEEE.math_real.all;
+
+entity TopModule is
+	generic (
+		N : positive := 4
+	);
+
+	port (
+		clk : in std_logic ;
+		rst : in std_logic;
+        mode : in std_logic ; -- 0 for multiplication 1 for Division
+		A : in std_logic_vector ( N -1 downto 0 ); --Divisor / Multiplicand
+		B : in std_logic_vector ( N -1 downto 0 ); --Dividend / Multiplier
+		start :in std_logic;
+		m : out std_logic_vector (N-1 downto 0 );
+		r : out std_logic_vector (N-1 downto 0);
+		--flags 
+		error : out std_logic ;
+		busy : out std_logic ;
+		valid: out std_logic 
+	);
+end entity TopModule;
+
+architecture behav of TopModule is
+use work.componentPackage.all;
+signal nbits : integer ;
+signal AluOut: std_logic_vector (N-1 downto 0);
+
+
+signal addOrSub : std_logic;
+signal ctrlRegMode,acc : std_logic_vector (1 downto 0);
+signal leftin : std_logic ;
+signal loadInvert : std_logic;
+signal AluC,sLin :std_logic;
+signal mulCand,reg1Out,regAccOut : std_logic_vector (N-1 downto 0);
+signal in1Comp , in2Comp,in1Invert,in2Invert, in1Final,in2Final : std_logic_vector (N-1 downto 0); 
+signal posOrNeg : std_logic;
+signal regAccOutComp,reg1OutComp,regAccOutFinal,reg1OutFinal,regAccOutInvert,reg1OutInvert : std_logic_vector (N-1 downto 0);
+signal productComp,productInvert,divComp,finalComp : std_logic_vector (2*N -1 downto 0);
+
+begin
+posOrNeg <= b(N-1) xor a(N-1);
+
+loadInvert <= ctrlRegMode(0) and ctrlRegMode(1);
+nbits <= integer(ceil(log2(real(N))));
+
+------------------Compliment Calculation---------------------------
+in1Invert <= not (a);
+in2Invert <= not (b);
+
+in1Twos : AddSub_CLA generic map (N)
+		port map (in1Invert,"0001",'0',in1Comp);
+
+in2Twos : AddSub_CLA generic map (N)
+		port map (in2Invert,"0001",'0',in2Comp);
+-------------------------------------------------------------------
+in1Final <= in1Comp when a(N-1) = '1' else a;
+in2Final <=in2Comp when b(N-1) = '1' else b;
+
+
+Ctrl : controller generic map (2)
+	port map (clk,AluOut(N-1),reg1Out(0),start,mulCand,regAccOut,AluC,sLin,mode, addOrSub,ctrlRegMode,acc,leftin,valid,busy);
+
+Reg1: UnvShiftReg generic map (N)
+		port map ( clk,rst,in2Final,reg1Out, ctrlRegMode,leftin,regAccOut(0));
+RegAcc : UnvShiftReg generic map (N)
+		port map ( clk,loadInvert,AluOut,regAccOut,acc,reg1Out(N-1),sLin);
+
+Reg2: UnvShiftReg generic map (N)
+		port map (clk,rst,in1Final,mulCand,"11",'0','0');
+
+Adder : AddSub_CLA generic map (N)
+		port map (regAccOut,mulCand,addOrSub,AluOut,AluC);
+
+
+
+
+
+productInvert <= not (regAccOut & reg1Out);
+productTwos : AddSub_CLA generic map (8)
+		port map (productInvert,"00000001",'0',productComp);
+
+reg1OutInvert <= not (reg1Out);
+regAccOutInvert <= not (regAccOut);
+
+reg1Twos : AddSub_CLA generic map (N)
+		port map (reg1OutInvert,"0001",'0',reg1OutComp);
+
+reg2Twos : AddSub_CLA generic map (N)
+		port map (regAccOutInvert,"0001",'0',regAccOutComp);
+
+divComp <= regAccOutComp & reg1OutComp;
+
+finalComp <= productComp when modeSel = '0' else divComp; 
+
+reg1OutFinal <=finalComp(N-1 downto 0)  when posOrNeg = '1' else reg1Out;
+regAccOutFinal <= finalComp((2*N) -1 downto N) when posOrNeg = '1' else regAccOut;
+
+
+
+
+
+
+
+r <= reg1OutFinal when modeSel = '0' else  regAccOutFinal ;
+
+m <= regAccOutFinal when modeSel = '0' else reg1OutFinal;
+
+end architecture behav;

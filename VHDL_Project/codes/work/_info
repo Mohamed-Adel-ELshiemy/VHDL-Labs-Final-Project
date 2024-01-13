@@ -1,0 +1,63 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\ITI internship\VHDL\VHDL_Project\codes
+Enbitmultiplierdivider
+Z1 w1691843676
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dD:\ITI internship\VHDL\VHDL_Project\codes
+Z6 8D:/ITI internship/VHDL/VHDL_Project/codes/NBitMultiplierDivider.vhd
+Z7 FD:/ITI internship/VHDL/VHDL_Project/codes/NBitMultiplierDivider.vhd
+l0
+L6
+VOmIN4<j3?em9ceHF1Zh453
+!s100 a_MDaKjJ6keW[a103Mk@j3
+Z8 OV;C;10.1d;51
+32
+!i10b 1
+Z9 !s108 1691845000.150000
+Z10 !s90 -reportprogress|300|-work|work|D:/ITI internship/VHDL/VHDL_Project/codes/NBitMultiplierDivider.vhd|
+Z11 !s107 D:/ITI internship/VHDL/VHDL_Project/codes/NBitMultiplierDivider.vhd|
+Z12 o-work work -O0
+Z13 tExplicit 1
+Artl
+R2
+R3
+R4
+Z14 DEx4 work 21 nbitmultiplierdivider 0 22 OmIN4<j3?em9ceHF1Zh453
+l23
+L22
+Z15 Vn>OQ;h[5BV3LoVS81EQL30
+Z16 !s100 eKWDeLX@J`zAT;nLjhU723
+R8
+32
+!i10b 1
+R9
+R10
+R11
+R12
+R13
+Enbitmultiplierdivider_tb
+w1691843107
+Z17 DPx4 ieee 11 numeric_bit 0 22 RE9LDG5Y>ElDk`fY=9GM]2
+R4
+DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+R3
+R5
+8D:/ITI internship/VHDL/VHDL_Project/codes/NBitMultiplierDivider_TB.vhd
+FD:/ITI internship/VHDL/VHDL_Project/codes/NBitMultiplierDivider_TB.vhd
+l0
+L10
+VAlY9A1`=:WjLG1QLHTngW2
+R8
+32
+R12
+R13
+!s100 YJNK0ROCO`HoP[b26>Emc1
+!i10b 1
+!s108 1691843708.218000
+!s90 -reportprogress|300|-work|work|D:/ITI internship/VHDL/VHDL_Project/codes/NBitMultiplierDivider_TB.vhd|
+!s107 D:/ITI internship/VHDL/VHDL_Project/codes/NBitMultiplierDivider_TB.vhd|

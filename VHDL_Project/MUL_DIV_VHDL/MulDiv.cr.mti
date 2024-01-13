@@ -1,0 +1,28 @@
+{F:/aaHahdsa Career/ITI Digital Verification/VHDL Course/VHDL Project/Task1/ALU.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {F:/aaHahdsa Career/ITI Digital Verification/VHDL Course/VHDL Project/Task1/ALU.vhd}
+Model Technology ModelSim SE-64 vcom 10.6d Compiler 2018.02 Feb 24 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Full_Adder
+-- Compiling architecture bhv of Full_Adder
+-- Compiling entity AddSub_CLA
+-- Compiling architecture struct of AddSub_CLA
+-- Loading entity Full_Adder
+
+} {} {}} {F:/aaHahdsa Career/ITI Digital Verification/VHDL Course/VHDL Project/Task1/UnivShiftReg.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {F:/aaHahdsa Career/ITI Digital Verification/VHDL Course/VHDL Project/Task1/UnivShiftReg.vhd}
+Model Technology ModelSim SE-64 vcom 10.6d Compiler 2018.02 Feb 24 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity UnvShiftReg
+-- Compiling architecture bhv of UnvShiftReg
+
+} {} {}} {F:/aaHahdsa Career/ITI Digital Verification/VHDL Course/VHDL Project/Task1/componentPackage.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {F:/aaHahdsa Career/ITI Digital Verification/VHDL Course/VHDL Project/Task1/componentPackage.vhd}
+Model Technology ModelSim SE-64 vcom 10.6d Compiler 2018.02 Feb 24 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package componentPackage
+
+} {} {}}

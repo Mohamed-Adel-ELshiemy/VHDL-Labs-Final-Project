@@ -1,0 +1,126 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\ITI internship\VHDL\VHDL Labs\ALU
+Ealu
+Z1 w1691049775
+Z2 DPx4 work 6 pack_a 0 22 >_ASYdj4=_cgRbNT@];:f0
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 11 numeric_bit 0 22 RE9LDG5Y>ElDk`fY=9GM]2
+Z5 dD:\ITI internship\VHDL\VHDL Labs\ALU
+Z6 8D:/ITI internship/VHDL/VHDL Labs/ALU/alu.vhd
+Z7 FD:/ITI internship/VHDL/VHDL Labs/ALU/alu.vhd
+l0
+L13
+V=mUkOWPi1@a_Kf8S]K9iZ2
+Z8 OV;C;10.1d;51
+32
+Z9 !s108 1691391008.435000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/ITI internship/VHDL/VHDL Labs/ALU/alu.vhd|
+Z11 !s107 D:/ITI internship/VHDL/VHDL Labs/ALU/alu.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+!s100 2ikl3m:H^?OIEdz_J0XPF2
+!i10b 1
+Aalu
+R2
+R3
+R4
+DEx4 work 3 alu 0 22 =mUkOWPi1@a_Kf8S]K9iZ2
+l20
+L19
+V?hZk12lC5aYMn0Do[3=Ga2
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 7]44B3m>>OTLG=LX_f2m`1
+!i10b 1
+Ealu_tb
+Z14 w1691056454
+R2
+Z15 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+R4
+Z16 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z17 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+R3
+Z18 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+R5
+Z19 8D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb.vhd
+Z20 FD:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb.vhd
+l0
+L9
+VAXz0FPzQWiZ3E7FO=T7Ec2
+!s100 7n_?EEf_Lk3`NQJiAU[ig3
+R8
+32
+!i10b 1
+Z21 !s108 1691391009.489000
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb.vhd|
+Z23 !s107 D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb.vhd|
+R12
+R13
+Asign_tb
+R2
+R15
+R4
+R16
+R17
+R3
+R18
+Z24 DEx4 work 6 alu_tb 0 22 AXz0FPzQWiZ3E7FO=T7Ec2
+l20
+L12
+Z25 VcakTIXCmaAj<hHiXP5WIo2
+Z26 !s100 zZKD0RFmVJ0RI6PX:1aS80
+R8
+32
+!i10b 1
+R21
+R22
+R23
+R12
+R13
+Ppack_a
+R1
+R5
+R6
+R7
+l0
+L5
+V>_ASYdj4=_cgRbNT@];:f0
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 _E5zoC1kDIal<@MJ>eB6j2
+!i10b 1
+Etestbench
+w1691055635
+R2
+R4
+R18
+R15
+R3
+R5
+8D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd
+FD:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd
+l0
+L13
+VdVzDKJ]dJXIJ@ah73??Gj1
+R8
+32
+R12
+R13
+!s100 cV2n8CWjh4JRdgXooFN6H3
+!i10b 1
+!s108 1691391009.132000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd|
+!s107 D:/ITI internship/VHDL/VHDL Labs/ALU/alu_tb_file.vhd|
